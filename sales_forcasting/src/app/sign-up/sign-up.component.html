@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="imgdiv"> 
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="text-center">
+                    <h2 style="color: #fff;">Sales Forcasting Application</h2>
+                    <h4 style="color: #fff;" >Create account</h4><hr>
+                </div>
+                <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+                    <div class="mb-3">
+                        <label style="color: #fff;" for="exampleInputEmail1" class="form-label">User Name</label>
+                        <input placeholder="name" formControlName="name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <label style="color: #fff;" for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input placeholder="abc@gmail.com" formControlName="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" style="font-size: 71%; color: white;" class="form-text">We'll never share your email with anyone else.</div>
+                      <!-- <label style="color: #fff;" for="exampleInputEmail1" class="form-label">Phone Number</label>
+                      <input formControlName="mobile" type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"> -->
+                    </div>
+                    <div class="mb-3">
+                      <label style="color: #fff;" for="exampleInputPassword1" class="form-label">Create Password</label>
+                      <input formControlName="pwd" type="password" class="form-control" id="exampleInputPassword1">
+                      <!-- <label style="color: #fff;" for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                      <input formControlName="repwd" type="password" class="form-control" id="exampleInputPassword2"> -->
+                    </div>
+                      <!-- <button type="submit" class="btn btn-primary">Sign Up</button> -->
+                      <a class="btn" mat-raised-button routerLink="/login">Sign Up</a>
+                      <br>
+                      <h3 style="text-align: center; color: #fff;">Already have an account?</h3>
+                      <h4 style="text-align: center;"><a routerLink="/login">login</a></h4>
+            
+                  </form>
+            </div>
+        </div>
+    </div>
+</div>

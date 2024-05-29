@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="text-center">
+                    <h2 class="login_heading">Sales Forcasting Application</h2>
+                    <h4 class="login_heading">User Login</h4><hr>
+                </div>
+                <form [formGroup]="loginForm" (ngSubmit)="login()">
+                    <div class="mb-3">
+                      <label style="color: #fff;" for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input formControlName="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="abc@gmail.com" aria-describedby="emailHelp">
+                      <div style="color: #fff;" id="emailHelp" class="form-text"  style="font-size: 71%; color: white;">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label style="color: #fff;" for="exampleInputPassword1" class="form-label">Password</label>
+                      <input formControlName="pwd" type="password" class="form-control" id="exampleInputPassword1" placeholder="password">
+                    </div>
+                      <!-- <button type="submit" class="btn btn-primary"><a routerLink="/home">Login</a></button> -->
+                      <a class="btn" mat-raised-button routerLink="/home">Login</a>
+                      <br>
+                      <h3 style="text-align: center; color: #fff;">Doesn't have an account?</h3>
+                      <h4 style="text-align: center; "><a routerLink="/sign-up">sign-in</a></h4>
+                  </form>
+            </div>
+        </div>
+    </div>
+</div>

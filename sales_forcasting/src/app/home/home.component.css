@@ -1,0 +1,26 @@
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.example-headers-align .mat-mdc-form-field + .mat-mdc-form-field {
+  margin-left: 80px;
+}
+.btn{
+  display: flex;
+  margin: auto;
+  width: 96.5px;
+}
+.card{
+  border: none;
+  width: 570px;
+  padding: 80px;
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(177, 42, 80);
+  background: linear-gradient(90deg, #11998E 0%, #38EF7D 100%);
+  transition:background-color 0.3s;
+  cursor:pointer;
+}

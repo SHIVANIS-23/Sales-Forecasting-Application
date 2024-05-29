@@ -1,0 +1,61 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "sign-up": [
+    {
+      "name": "shivani",
+      "email": "shivani2392002@gmail.com",
+      "mobile": 6369804289,
+      "pwd": "123",
+      "repwd": "123",
+      "id": 1
+    },
+    {
+      "name": "",
+      "email": "",
+      "mobile": "",
+      "pwd": "",
+      "repwd": "",
+      "id": 2
+    },
+    {
+      "name": "Shivani",
+      "email": "shivaninamakkal@gmail.com",
+      "mobile": 6369804289,
+      "pwd": "123",
+      "repwd": "123",
+      "id": 3
+    },
+    {
+      "name": "",
+      "email": "",
+      "mobile": "",
+      "pwd": "",
+      "repwd": "",
+      "id": 4
+    },
+    {
+      "name": "kaar",
+      "email": "kaartech@gmail.com",
+      "mobile": "",
+      "pwd": "123",
+      "repwd": "",
+      "id": 5
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

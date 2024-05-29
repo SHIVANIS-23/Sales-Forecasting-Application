@@ -1,0 +1,26 @@
+.card{
+    margin-top: 100px;
+    border: none;
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(177, 42, 80);
+    background: linear-gradient(90deg, #11998E 0%, #38EF7D 100%);
+    transition:background-color 0.3s;
+    cursor:pointer;
+}
+.btn{
+    display: flex;
+    margin: auto;
+    width: 96.5px;
+}
+.card:hover{
+    background-color: rgb(243, 247, 255);
+}
+.login_heading{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    color: #fff
+}

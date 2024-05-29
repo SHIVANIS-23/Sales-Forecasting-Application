@@ -1,0 +1,74 @@
+<form [formGroup]="form">
+<div class="container">
+  <div class="row">
+      <div class="col">
+          <div class="card">
+      <mat-accordion class="example-headers-align">
+        <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)" hideToggle>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Upload csv file
+            </mat-panel-title>
+            <mat-panel-description>
+              make sure you are uploading a csv file only
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <input formControlName="file" type="file" class="file-upload" accept=".csv" (change)="onFileSelect($event)">
+          <mat-action-row>
+            <button mat-button color="primary" type ="submit" (click)="nextStep()">Next</button>
+          </mat-action-row>
+        </mat-expansion-panel>
+      
+        <mat-expansion-panel [expanded]="step === 1" (opened)="setStep(1)" hideToggle>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Select Duration
+            </mat-panel-title>
+            <mat-panel-description>
+              choose the time period to predict
+            </mat-panel-description>
+
+          </mat-expansion-panel-header>
+
+          <mat-form-field appearance="fill">
+            <mat-label>Select an option</mat-label>
+            <mat-select [(value)]="selected" formControlName="periodicity">
+              <mat-option  value="year">year</mat-option>
+              <mat-option  value="month">month</mat-option>
+              <mat-option  value="day">day</mat-option>
+            </mat-select >
+          </mat-form-field>
+          
+          <mat-action-row>
+            <button mat-button color="warn" (click)="prevStep()">Previous</button>
+            <button mat-button color="primary" type ="submit" (click)="nextStep()">Next</button>
+          </mat-action-row>
+        </mat-expansion-panel>
+      
+        <mat-expansion-panel [expanded]="step === 2" (opened)="setStep(2)" hideToggle>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Number of time period
+            </mat-panel-title>
+            <mat-panel-description>
+              enter the time period to predict
+              
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <input formControlName="duration" type="text" numbersOnly required  id="Amount" name="Amount" class="form-control" placeholder="enter the time period">
+          
+      
+          <mat-action-row>
+            <button mat-button color="warn" (click)="prevStep()">Previous</button>
+            <button mat-button color="primary" type ="submit" (click)="nextStep()">End</button>
+          </mat-action-row>
+        </mat-expansion-panel>
+      
+      </mat-accordion>
+      <a mat-raised-button class="btn" style=" margin-top: 15%;" type ="submit" (click)="submit()" (click)="fileUpload()">Predict</a>
+    </div>
+  </div>
+</div>
+</div>
+</form>
+      
